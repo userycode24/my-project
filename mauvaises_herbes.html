@@ -1,95 +1,81 @@
 <!DOCTYPE html>
-<html lang="fr"> <!--Définit la langue du document -->
-<head> <!--la partie en-tête d'une page HTML-->
-    <meta charset="UTF-8"> <!--Définit l'encodage des caractères à UTF-8-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--définit les paramètres d'affichage de la page-->
-    <title>Types de plantes</title> <!--Définit le titre de la page-->
-    <link rel="stylesheet" href="styles.css"> <!--Lie lefichier Css a f HTML-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types de plantes</title>
+    <link rel="stylesheet" href="styles.css">
+   
 </head>
-<body> <!--le contenu visible par l'utilisateur-->
-    <div class="fond">  <!--balise <div> en HTML sert à créer des divs ou des blocs sur une page web-->
-    <header> <!--est utilisé pour structurer et definir la partie supérieure d'une page web, souvent pour inclure des éléments comme le logo et les menus de navigation.-->
-        <nav> <!--utilisé pour définir une div de navigation-->
-            <ul> <!-- Unordered List /liste non ordonnée.-->
-                <li><a href="#">Accueil</a></li> <!-- <li> <li/> la liste affichée en format "carré" (square)-->
-                <li><a href="#">Produits</a></li>  <!--Pour ajouter un lien <a href="https://www.example.com">Texte du lien avec destination</a>-->
-                <li><a href="#">À propos de nous</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Types de plantes</h1> <!--Cette balise est utilisée pour terminer un titre principal dans une page -->
-    </header>
- <main> <!-- utilisée pour définir le contenu principal d'une page web--> 
-        <div class="buttons"> <!-- la balise <div> utilisé pour diviser la page en sections logiques afin d'organiser le contenu-->
-            <!--class" est utilisé pour définir une classe pour un élément HTML spécifique. Cela permet d'appliquer des styles CSS-->
-            <button> <a href="#" >Monocotylédones </a></button>
-            <button><a href="#"> Dicotylédones</a></button>
-            <button><a href="#" >Les Mauvaises Herbes</a></button>
-            <button><a href="#"> Adventices</a></button>
-        </div>
-
-    
-      
-        <div class="content">
-            <article> <!--est utilisé pour structurer du contenu indépendant-->
-                <h2>Monocotylédones</h2>
-                <p>Plantes dont la graine possède un seul cotylédon  (la partie embryonnaire de la graine qui devient les premières feuilles de la plante)  des feuilles souvent étroites et parallèles avec des nervures parallèles, des organes floraux en multiples de trois, et un système racinaire souvent fibreux. </p>
-                <img src="fond.jpeg" width="200" >
-                <div class="imgrami">
-                    <img src="racineramifiee.jpeg" width="200" >
-                </div>
-                
-                 
-
-                
-
-                <button>Read more ></button>
-            </article>
-
-            <article>
-                <h2>Dicotylédones</h2>
-                <p>Plantes dont la graine possède deux cotylédons. Elles ont des feuilles avec des nervures réticulées ou ramifiées, comme le pissenlit. Leur croissance inclut à la fois une croissance primaire et secondaire, ce qui permet une plus grande épaisseur des tiges.</p>
-                <button>Read more ></button>
-            </article>
-
-            <article>
-                <h2>Mauvaises herbes et adventices</h2>
-                <p><strong>Définition :</strong> Plantes dont la graine possède un seul cotylédon.</p>
-                <p><strong>Monocotylédones :</strong> Plantes dont la graine possède un seul cotylédon.</p>
-                <p><strong>Dicotylédones :</strong> Plantes dont la graine possède deux cotylédons.</p>
-                <button>Read more ></button>
-            </article>
-
-            <article>
-                <h2>Différences</h2>
-                <p><strong>Feuilles :</strong></p> <!-- <strong> pour indiquer une importance dusémantique au texte et non seulement pour le formater en gras-->
+<body>
+    <div class="fond">
+        <header>
+            <nav>
                 <ul>
-                    <li><strong>Monocotylédones :</strong> Feuilles généralement longues et étroites avec des nervures parallèles (ex. herbe).</li>
-                    <li><strong>Dicotylédones :</strong> Feuilles avec des nervures réticulées ou ramifiées (ex. pissenlit).</li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">À propos de nous</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-                <p><strong>Croissance :</strong></p>
-                <ul>
-                    <li><strong>Monocotylédones :</strong> Croissance primaire avec peu ou pas de croissance secondaire.</li>
-                    <li><strong>Dicotylédones :</strong> Croissance primaire et secondaire, permettant une plus grande épaisseur des tiges.</li>
-                </ul>
-            </article>
+            </nav>
+            <h1>Types de plantes</h1>
+        </header>
 
-            <article>
-                <h2>Gestion</h2>
-                <p><strong>Contexte :</strong></p>
-                <ul>
-                    <li><strong>Mauvaises herbes :</strong> Souvent utilisé dans un sens négatif, indiquant une nuisance pour les cultures.</li>
-                    <li><strong>Adventices :</strong> Terme plus neutre, englobant toutes les plantes spontanées, qu'elles soient nuisibles ou non.</li>
-                </ul>
-                <p><strong>Gestion :</strong></p>
-                <ul>
-                    <li><strong>Mauvaises herbes :</strong> Souvent ciblées pour être éliminées dans les pratiques agricoles.</li>
-                    <li><strong>Adventices :</strong> Certaines peuvent être tolérées ou même bénéfiques pour la biodiversité.</li>
-                </ul>
-            </article>
-        </div>
-    </main>
+        <main>
+            <div class="buttons">
+                <button><a href="#monocotyledones">Monocotylédones</a></button>
+                <button><a href="#dicotyledones">Dicotylédones</a></button>
+                <button><a href="#differences">Différences</a></button>
+                <button><a href="#mauvaisesherbes">Les Mauvaises Herbes</a></button>
+                <button><a href="#adventices">Adventices</a></button>
+            </div>
+
+            <div class="content">
+                <article id="monocotyledones">
+                    <h2>Monocotylédones</h2>
+                    <p>Plantes dont la graine possède un seul cotylédon (feuille embryonnaire). Elles ont des feuilles souvent étroites avec des nervures parallèles, et un système racinaire souvent fibreux.</p>
+                    <img src="monocotyledones.jpeg" >
+                    <p class="description"> Les feuilles du maïs sont longues avec des nervures parallèles.</p>
+                    <img src="racineramifiee.jpeg" >
+                    <p class="description"> ses racines sont ramifiées.</p>
+                </article>
+
+                <article id="dicotyledones">
+                    <h2>Dicotylédones</h2>
+                    <p>Plantes dont la graine possède deux cotylédons. Elles ont des feuilles avec des nervures réticulées ou ramifiées, comme le pissenlit. Leur croissance inclut à la fois une croissance primaire et secondaire, ce qui permet une plus grande épaisseur des tiges.</p>
+                    <img src="#" alt="Racine dicotylédones">
+                    <p>Paragraphe décrivant la différence pour les dicotylédones.</p>
+                    <button>En savoir plus ></button>
+                </article>
+
+                <article id="differences">
+                    <h2>Différences</h2>
+                    <p><strong>Feuilles :</strong></p>
+                    <ul>
+                        <li><strong>Monocotylédones :</strong> Feuilles généralement longues et étroites avec des nervures parallèles (ex. herbe).</li>
+                        <li><strong>Dicotylédones :</strong> Feuilles avec des nervures réticulées ou ramifiées (ex. pissenlit).</li>
+                    </ul>
+                    <p><strong>Croissance :</strong></p>
+                    <ul>
+                        <li><strong>Monocotylédones :</strong> Croissance primaire avec peu ou pas de croissance secondaire.</li>
+                        <li><strong>Dicotylédones :</strong> Croissance primaire et secondaire, permettant une plus grande épaisseur des tiges.</li>
+                    </ul>
+                </article>
+
+                <article id="mauvaisesherbes">
+                    <h2>Mauvaises Herbes</h2>
+                    <p>Ce terme est souvent utilisé de manière subjective pour décrire des plantes non désirées dans un contexte spécifique.</p>
+                    <button>En savoir plus ></button>
+                </article>
+
+                <article id="adventices">
+                    <h2>Adventices</h2>
+                    <p>Ce terme désigne spécifiquement les plantes qui poussent spontanément dans des cultures ou des jardins, sans y avoir été semées intentionnellement. Les adventices peuvent être considérées comme mauvaises herbes dans un jardin ou un champ cultivé, car elles peuvent concurrencer les cultures cultivées pour l'eau, la lumière et les nutriments.</p>
+                    <button>En savoir plus ></button>
+                </article>
+            </div>
+        </main>
+    </div>
+
 </body>
-</div>
-
 </html>

@@ -5,7 +5,7 @@
 }
 
 .fond {
-    background-image: url("photo.WEBP"); 
+    background-color: #ccffcc;
 }
 
 header {
@@ -18,18 +18,20 @@ header h1 {
     margin-top: 20px;
     color: #f5f5f5;
     font-size: 40px;
+    font-family:pacifico;
+    
 }
+
 
 nav ul {
     list-style-type: none;
     margin-left: 10px;
     padding: 0;
-    overflow: hidden;
-    background-color: #2c502c;
+    background-color: #3a693a;
 }
 
 nav ul li {
-    margin: 0 50px;
+    margin: 150px; /*espace entre les buttons*/
     display: inline;
 }
 
@@ -37,24 +39,24 @@ nav ul li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding:  16px;
     text-decoration: none;
     
 }
 
 nav ul li a:hover {
-    background-color: #81c58b;
+    background-color: #49c459;
 }
 
- .buttons {
+.buttons { /*ext*/
     text-align: center;
-    margin: 30px 0;
+    margin: 30px ;
 }
 
-.buttons button {
-    background-color: #187754;
+.buttons button { /*intr*/
+    background-color: #195b43;
     border: none;
-    padding: 20px 20px;
+    padding: 20px ;
     margin: 5px;
     border-radius: 5px;
 }
@@ -76,36 +78,64 @@ nav ul li a:hover {
 }
 
  article {
-    background-color: #004d00;
+    background-color: #014d19;
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+    margin: 20px ;
+    border-radius: 50px;
     width: 80%;
     max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 article h2 {
+    text-align: center;
     color: #ccffcc;
     margin-top: 0;
+    font-family:dancing script;
 }
 
 article p {
-    color: #f39f9f;
+    color: #ffffff;
 }
-
++
 article ul {
     color: #f5f5f5;
 }
 
 article img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    position: relative;
+    max-width: 40%;
+    border-radius: 50px;
+    margin: 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+   }
+   .description-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    
+    padding: 2px;
+    margin: 10px;
+}
+.description-container p {
+    color: #dafbf1;
+    font-size: 14px;
+    font-family:pacifico;
+    text-align: center;
+    margin: 20p;
+
 }
 
-article .description {
-    font-size: smaller;
-    color: #777;
-    margin-top: 5px;
-}
+.adv img {
+position: relative;  
+  align-items: center;
+  bottom: 50px;
+  width: 60%;
+  margin: 50px;
+  margin-bottom: 5px;
+ }

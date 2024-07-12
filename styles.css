@@ -1,33 +1,32 @@
- body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .fond {
-    background-color: #ccffcc;
+    background-color: #dbffdb;
 }
 
 header {
-    background-color: #004d00;
+    background-color: #6fbd6f;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
     margin-top: 20px;
-    color: #f5f5f5;
+    color: #1e4e32;
     font-size: 40px;
-    font-family:pacifico;
-    
+    font-family: Pacifico, cursive;
 }
-
 
 nav ul {
     list-style-type: none;
     margin-left: 10px;
     padding: 0;
-    background-color: #3a693a;
+    background-color: #156b4a;
 }
 
 nav ul li {
@@ -39,25 +38,34 @@ nav ul li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding:  16px;
+    padding: 16px;
     text-decoration: none;
-    
 }
 
 nav ul li a:hover {
-    background-color: #49c459;
+    background-color: #8be297;
 }
 
-.buttons { /*ext*/
+.logo-container {
+    position: absolute;
+    left: 20px;
+    top: 77px;
+}
+
+.logo {
+    max-width: 120px;
+    margin-right: 5px;
+}
+
+.buttons {
     text-align: center;
-    margin: 30px ;
+    margin: 30px;
 }
 
-.buttons button { /*intr*/
+.buttons button {
     background-color: #195b43;
     border: none;
-    padding: 20px ;
-    margin: 5px;
+    padding: 20px;
     border-radius: 5px;
 }
 
@@ -70,20 +78,20 @@ nav ul li a:hover {
     background-color: #559999;
 }
 
- .contenu {
+.contenu {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
- article {
+article {
     background-color: #014d19;
     padding: 20px;
-    margin: 20px ;
+    margin: 20px;
     border-radius: 50px;
     width: 80%;
-    max-width: 800px;
+    max-width: 900px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
@@ -94,15 +102,11 @@ article h2 {
     text-align: center;
     color: #ccffcc;
     margin-top: 0;
-    font-family:dancing script;
+    font-family: 'Dancing Script', cursive;
 }
 
 article p {
     color: #ffffff;
-}
-+
-article ul {
-    color: #f5f5f5;
 }
 
 article img {
@@ -114,28 +118,34 @@ article img {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+}
 
-   }
-   .description-container {
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
-    
+.description-container {
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 2px;
     margin: 10px;
 }
+
 .description-container p {
     color: #dafbf1;
     font-size: 14px;
-    font-family:pacifico;
+    font-family: Pacifico, cursive;
     text-align: center;
-    margin: 20p;
-
 }
 
 .adv img {
-position: relative;  
-  align-items: center;
-  bottom: 50px;
-  width: 60%;
-  margin: 50px;
-  margin-bottom: 5px;
- }
+    position: relative;
+    margin-left: 250px;
+    width: 400px;
+    max-height: 500px;
+}
+
+footer {
+    background-color: #004d00;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
